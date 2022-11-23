@@ -1,0 +1,39 @@
+<script>
+    var employee ={
+        fullName: "Akash",
+        age: 44,
+        designation: "IT",
+        location:"chennai",
+        phoneNo : 34343434343,
+        salaryRange:[4,5,5,5],
+        status:true,
+        address:{
+            doorNo:33,
+            location:"chennai"
+        },
+        calculateCurrentAge(){
+            console.log("welcome");
+            return this.age;
+        },
+        displayName:function (input){
+         this.fullName = input;
+        }
+    };
+    console.log(employee);
+    console.log(employee.calculateCurrentAge());
+    employee.displayName("salman");
+    console.log(employee);
+    var result = 2>1?employee.calculateCurrentAge():null;
+    console.log(result);
+    if(result>20){
+        alert("22");
+    }
+
+    // function addition(a,b){
+    //     return a+b;
+    // }
+    var addition = function(a,b){
+        return a+b;
+    }
+    addition(22,33)
+</script>

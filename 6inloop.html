@@ -1,0 +1,29 @@
+<script>
+    var employee ={
+        fullName: "Akash",
+        age: 44,
+        designation: "IT",
+        location:"chennai",
+        phoneNo : 34343434343,
+        salaryRange:[4,5,5,5],
+        status:true,
+        address:{
+            doorNo:33,
+            location:"chennai"
+        },
+        calculateCurrentAge(){
+            console.log("welcome");
+            return this.age;
+        },
+        displayName:function (input){
+         this.fullName = input;
+        }
+    };
+
+    employee.fullName = "rajesh";
+    delete employee.fullName;
+  for(var input in employee){
+      console.log("key :"+input); 
+      console.log("value :"+employee[input]);
+  }
+</script>
